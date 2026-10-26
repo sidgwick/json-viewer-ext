@@ -1,0 +1,23 @@
+{
+  "name": "json-viewer-chrome-extension",
+  "private": true,
+  "version": "0.2.14",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:crx": "npm run build && node scripts/build-crx.mjs",
+    "build:zip": "npm run build && node scripts/build-zip.mjs"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.0",
+    "lossless-json": "^4.0.1",
+    "sprintf-js": "^1.1.3",
+    "svelte": "^4.2.11"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@tsconfig/svelte": "^5.0.8",
+    "sass-embedded": "^1.81.0",
+    "vite": "^5.1.4"
+  }
+}

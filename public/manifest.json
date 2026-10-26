@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "JSON Viewer",
+  "version": "0.2.14",
+  "description": "Pretty print JSON responses in Chrome tabs.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "css": ["extension.css", "style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
